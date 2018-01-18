@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website by Dominik Cpak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  </head>
+  <body>
+    <header >
+      <!-- The navbar was created with help of Liz's basic navbar codepen -->
+      <nav class="nav">                <!-- Navigation -->
+        <ul class="menu navL"> 
+          <li class="active home"><a href="index.html" title="Home">Home</a></li>
+          <li><a href="glossary.html" title="Glossary">Glossary</a></li>
+          <li><a href="practice.html" title="Good Practice">Good Practice</a></li>
+          <li><a href="jobs.html" title="Job Comparison">Job Comparison</a></li>
+          <li><a href="resources.html" title="Resources">Resources</a></li>
+          <li><a href="validation.html" title="Validation">Validation</a></li>
+        </ul>
+      </nav>
+      <h1 class="title">Sakura Design</h1>      <!-- Title of the website -->
+    </header>
+    <main class="siteMain">
+      <h2>The team</h2>            <!-- Title of given page --> 
+      <div class="team">          <!-- Team section control -->
+        <section class="sectionD">  <!-- Bio + picture -->
+          <img src="Pictures/Dominik.jpg" width="235" height="321" alt="Dominiks Picture">
+          <h3>Dominik Cpak</h3>
+          <h4>Design and programming</h4>
+          <p>HND Graphics and Visalisation student. Before univeristy completed an IT course at Northampton College.</p>
+        </section>
+        <section class="sectionK">    <!-- Bio + picture -->
+          <img src="Pictures/Kadent.jpg" width="235" height="321" alt="Kaydens picture">
+          <h3>Kaden Talbot</h3>
+          <h4>Design</h4>
+            <p>BSC Computing Student. Before university did an A leve course.<br>Has big experience both with HTML and CSS.</p>
+        </section>
+      </div> <!-- Div team closing tag -->
+      <div class="videoT">                         <!-- Video page section -->
+        <h3 class="headingC">A short video made by our team</h3>
+        <!-- The video controls were taken from Liz's codepen video tutorial-->
+        <video controls><source src="csy1018video.mp4"></video>
+      </div> <!-- Div video closing tag -->
+        <section class="contact">
+          <h2>Contact Details</h2>
+            <section class="sectionMap">          <!-- The map section -->
+              <h3 class="headingC">Where you can find us</h3>
+              <!-- The map was created with use of Liz's Google Maps Api tutorial -->
+                <div id="map"></div>
+              <script>
+                function initMap() {
+                  var nth = {lat: 52.25, lng: -0.89};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: nth
+                  });
+                  var marker = new google.maps.Marker({
+                    position: nth,
+                    map: map,
+                  });
+                }
+              </script>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhaGf-R7NoQwrj6hTxUr8VKxAZbucLoL0&callback=initMap" >
+              </script>
+            </section> <!-- Section contact closing tag -->
+            <section class="form"> <!-- Form HTML -->
+              <!-- The contact form was created with help of Mozzilla developers tutorial: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms -->
+              <h3>Ask us a question or provide feedback!</h3>
+              <form action="/my-handling-form-page" method="post">
+                <div class="Cform">             <!-- Name -->
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name">
+                </div>
+
+                <div class="Cform">           <!-- Email -->
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_email">
+                </div>
+
+                <div class="Cform">           <!--Message -->
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </div>
+
+                <div class="button">            <!-- Button -->
+                  <button type="submit">Send your message</button>
+                </div>
+              </form>
+            </section> <!-- Section form closing tag -->
+        </section>
+    </main>
+    <footer id="footer">
+      <p>&dagger; Created by Dominik Cpak</p> 
+    </footer>
+  </body>
+</html>

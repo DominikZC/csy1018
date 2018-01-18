@@ -1,0 +1,449 @@
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+            /* Header code controlling the nav and the banner */
+header {  
+  background: url(Pictures/roman-kraft-91576.jpg); /*Photo by Roman Kraft on Unsplash*/
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  height: 600px;
+}
+              /* Navigation control - menu made with help of Liz's codepen  example */
+nav {   
+  height: auto;
+  background-color: rgba(209, 175, 175, 0.49);
+}
+
+
+.menu {
+  list-style-type: none;
+}
+                                /* Controls the spacing between the li elements in the navbar */
+ul.navL li {
+  margin-right: 0px;
+  border-right: 1px #ffffff;
+  padding-left: 20px;
+}
+
+                                /* Controls the style of the li element in the navbar */
+ul.navL li a {
+  text-decoration: none;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 2em;
+}
+
+ul.navL li a:hover {
+  color: #d05e5e;
+}
+
+ul.navL li.active a {
+  font-weight: bold;
+  color: #d05e5e;
+
+}
+                          /*Navigation end*/
+
+          /* Controls thr height and the background of the body */
+body {                        
+  background: url(Pictures/sakura.png);
+  height: 100vh;
+}
+
+                        /* Controls the banner and the main heading of the webpage */
+h1.title {
+  text-align: center;
+  background-color: transparent;
+  align-self: center;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  margin: auto;
+  font-size: 5em;
+  color:aliceblue;
+}
+  
+                                /* Main content of the page + font control */
+main {
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  flex: 1 0 auto;
+  margin:0  auto;
+  background-color: rgba(255, 0, 0, 0.22);
+
+} 
+
+                                          /* Index team + video */
+
+.sectionD,.sectionK {
+  width: 100%;
+  text-align: center;
+  color:#ffffff;
+  font-size: 1.250em;
+  margin:2em;
+}
+
+
+
+div.team {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}                          
+                                                /* Index team end*/
+
+                                                /* index video */
+.videoT{                      
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  color:#ffffff;
+  font-size: 1.255em;
+  margin: 0 auto 0 auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.videoT h3{
+  padding-bottom: 10px;
+}
+.videoT video {
+  width: 100%;
+}                              /* index video end*/
+
+                                  /* index map */
+.sectionMap{                      
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  color:#ffffff;
+  font-size: 1.250em;
+  margin: 2em auto 0 auto;
+
+} 
+
+.headingC{
+  margin-bottom: 50px;
+}
+
+div#map {
+  height: 500px;
+  width: 100%;
+}                           /* index map end*/
+
+
+                            /* index form code */
+.form{                      
+  display: flex;
+  flex-direction: column;
+  margin: 6em  auto;
+  padding: 1em;
+  width: 60%;
+  text-align: center;
+  color:#ffffff;
+  font-size: 1.250em;
+  border: 1px solid #000000;
+  border-radius: 1em;
+  border-color: aliceblue;
+}
+
+.Cform {
+  margin-top: 1em;
+}
+
+label {
+  display:inline-grid;
+  width: 90px;
+  text-align:center;
+  font: sans-serif;
+
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 150px;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+.button {
+  padding-left: 90px;
+  margin-left: .5em;
+}
+
+
+      /* index form code end - made with help of Mozilla developers tutorial*/
+
+                                          /* Good practice page */
+.zurbP {
+  display: flex;
+  width: 10em;
+}
+div.practiceI {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align:center;
+  font-size:1.5em;
+}
+
+                                          /* footer code */
+footer {                  
+  position:inherit ;
+  bottom:0;
+  font-family: 'Barlow', sans-serif;
+  width:100%;
+  padding-top:20px;
+  background-color: rgba(234, 199, 199, 0.67);
+
+}
+
+                              /*Controls all headings inside the main tags*/
+h2 {         
+  margin:10px;
+  text-align:center;
+  font-size:2.5em;
+
+}
+
+                                          /*Glossary page*/
+dl {                      
+  text-align: center;
+  font-family:sans-serif;
+  justify-content:center;
+  display:flex;
+  flex-direction: column;
+  flex:1 0 auto;
+}
+dd {
+  border-bottom: 1px; 
+  padding-top: 5px;
+
+}
+dt {
+  color:white;
+  padding-top: 10px;
+  font-size:1.5em
+}
+                                /* Controls the width of the bottom border */ 
+dd:after {  
+  content: ""; 
+  display: block; 
+  margin: 0 auto; 
+  width: 25%; 
+  padding-top: 20px; 
+  border-bottom: 1px solid #ffffff; 
+}
+
+                                              /*jobs page*/                              
+ul.jobsLi {                   
+  display: inline-block;
+  list-style-type: none;
+}
+
+div.jobs {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+div.job1, div.job2 {
+  flex: 1 1 100px;
+  padding: 0 10px 30px 10px;
+}
+
+.jobD {
+  margin-top: 4em;
+
+}
+.jobE {
+  margin-top: 2.5em
+
+}
+.jobS {
+  margin: 1em;
+} 
+.job1,.job2, a {
+  text-decoration:none;
+}
+
+                  /*jobs page end*/
+
+section.references {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+ul.references {
+  display: inline-block;
+  text-align: center;
+}
+
+ul.references li {
+  padding: 0 10px 5px 10px;
+}
+                            /* applies to almost all pages, sets the flow of the page */
+div.column { 
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+div.column img {
+  width: 80%;
+}
+
+div.column p { 
+  text-align: center;
+  margin: 10px 10px 30px 10px;
+}
+
+                                                /* resources pages */
+.resourceL {
+  display:flex;
+  flex-flow: column;
+  text-align:center;
+  font-size:1.5em;
+}
+
+.linkW {
+font-family: "Barlow", sans-serif;
+font-size: 1.75em;
+color:black;
+text-decoration:none;
+}
+
+.linkW:hover {
+color:#e24f4f;
+}
+
+.resource {
+  font-size:1.5em;
+
+}
+
+ul.resourceL li {
+  text-decoration: none;
+  margin: 0.5em;
+  list-style-type: none;
+
+}
+ul.resourceL li:last-child{
+  margin-bottom: 2em
+}
+
+                                            /* Validation page */
+.reflection { 
+  margin-bottom: 1em;
+  font-size:1.5em;
+  
+}
+.validationli {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-decoration:none;
+  list-style-type: none;
+  font-size: 1.5em;
+  text-align:center;
+  
+}
+.validationli li {
+  margin: 1em 0.5em 0.5em 0.5em
+}
+
+div.column h3{
+  font-size: 2em;
+  margin: 1em;
+}
+
+                                              /* Media queries */
+
+@media only screen and (min-width: 800px) {
+  header {
+    height: 75vh;
+  }
+
+  h1.title {
+    font-size: 7em;
+  }
+
+  nav {
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  ul.navL {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  ul.navL li {
+    padding:0 5px;
+  }
+
+  ul.navL li a {
+    font-size: 1.675em;
+  }
+
+  main {
+    width: 800px;
+  }
+
+  div.team {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+  }
+
+  div.jobs {
+    display: flex;
+    flex-flow: row wrap;
+    font-size:1.5em
+  }
+}
+  @media (min-width: 1200px) {
+    ul.navL li a {
+      font-size: 1.875em;
+    }
+}
